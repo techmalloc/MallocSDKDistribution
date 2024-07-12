@@ -1,0 +1,11 @@
+framework module Malloc {
+  umbrella header "Malloc-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module Malloc.Swift {
+  header "Malloc-Swift.h"
+  requires objc
+}
